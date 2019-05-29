@@ -2,11 +2,14 @@
 /**
  * 
  */
-class Error
+class Error extends Controller
 {
 	function __construct()
 	{
-		echo "This is an ERROR !!!";
+		parent::__construct();
+		echo "This is an ERROR !!!<br/>";
+		$this->view->msg = "This page doesn't exists";
+		$this->view->render('error/index');//Hien ra trang error
 	}
 }
 
