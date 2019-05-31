@@ -7,12 +7,18 @@ class Bootstrap
 	
 	function __construct()
 	{
-		$url = $_GET['url'];
+		$url = isset($_GET['url']) ? $_GET['url'] : null;
 		//Xoa khoang trang thua o ben phai chuoi
 		$url = rtrim($url, '/');
 		//Tach tung action trong chuoi thanh tung phan tu trong mang
 		$url = explode('/', $url);
 		// print_r($url);
+
+		if (empty($url[0])) {
+			require 'controllers/index.php';
+			$controller = new Index();
+			return false;
+		}
 
 		$file = 'controllers/' . $url[0] . '.php';
 		if (file_exists($file)) {

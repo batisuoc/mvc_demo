@@ -1,6 +1,5 @@
 <?php require 'views/header.php'; ?>
 
-<hr>
-<?php echo $this->msg; ?>
+<h3>This is Index page</h3>
 
 <?php require 'views/footer.php'; ?>
