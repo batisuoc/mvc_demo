@@ -14,31 +14,47 @@ class Bootstrap
 		$url = explode('/', $url);
 		// print_r($url);
 
+		//Neu khong co action nao thi chuyen ve trang index
 		if (empty($url[0])) {
 			require 'controllers/index.php';
 			$controller = new Index();
+			$controller->index();
 			return false;
 		}
 
+		//Khoi tao controller theo phan tu thu nhat tren mang url
 		$file = 'controllers/' . $url[0] . '.php';
 		if (file_exists($file)) {
 			require $file;
 		}
 		else {
-			// throw new Exception("The file : $file does not exist. ");
+			//Hien thi trang error roi dung lai
 			require 'controllers/error.php';
 			$controller = new Error();
-			return false;//Hien thi trang error roi dung lai
+			return false;
 		}
-
 		$controller = new $url[0];
-
+		//Neu co param o url[2] thi truyen param vao function url[1] neu co
 		if (isset($url[2])) {
-			$controller->{$url[1]}($url[2]);	
+			if (method_exists($controller, $url[1])) {
+				$controller->{$url[1]}($url[2]);
+			}
+			else {
+				echo "THIS FUNCTION DOES NOT EXISTS IN THIS CONTROLLER";
+			}
 		}
 		else {
+			//Truy cap vao function url[1] cua controller url[0] neu co
 			if (isset($url[1])) {
-				$controller->{$url[1]}();	
+				if (method_exists($controller, $url[1])) {
+					$controller->{$url[1]}();
+				}
+				else {
+					echo "THIS FUNCTION DOES NOT EXISTS IN THIS CONTROLLER";
+				}
+			}
+			else {
+				$controller->index();
 			}	
 		}
 	}
