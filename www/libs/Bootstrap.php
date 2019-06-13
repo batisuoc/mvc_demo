@@ -33,7 +33,9 @@ class Bootstrap
 			$controller = new Error();
 			return false;
 		}
-		$controller = new $url[0];
+		$controller = new $url[0];//Khoi tao controller
+		$controller->loadModel($url[0]);//Khoi tao model trong controller
+		
 		//Neu co param o url[2] thi truyen param vao function url[1] neu co
 		if (isset($url[2])) {
 			if (method_exists($controller, $url[1])) {
