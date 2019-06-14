@@ -5,9 +5,17 @@
 class Database extends PDO
 {
 	
-	public function __construct()
+	function __construct()
 	{
-		parent::__construct('mysql:host=localhost:8000;dbname=myDb', 'user', 'test');
+		try 
+		{
+			parent::__construct('mysql:host=mvcdemo_db_1;port:3306;dbname=mvc', 'user', 'test');
+		} 
+		catch(PDOException $e) 
+		{
+			die("ERROR: Could not connect. " . $e->getMessage());
+		}
+		
 	}
 }
 
