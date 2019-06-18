@@ -7,9 +7,10 @@ class View
 	
 	function __construct()
 	{
-		echo "View class<br/>";
+		# code ...
 	}
 
+	//Hien ra giao dien cua controller do
 	public function render($name, $noInclude = false)
 	{
 		if ($noInclude == true) {

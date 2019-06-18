@@ -8,11 +8,18 @@
 
 </head>
 <body>
+
 	<div id="header">
 		Header<br>
 		<a href="<?= URL ?>index">Index</a>
 		<a href="<?= URL ?>help">Help</a>
-		<a href="<?= URL ?>login">Login</a>
+		<?php if (Session::get('loggedIn') == true) { ?>
+		<a href="<?= URL ?>login">Log out</a>
+		<?php } else { ?>
+		<a href="<?= URL ?>dashboard/logout">Log in</a>
+		<?php } ?>
+		
+		
 	</div>
 	<div id="content">
 	<!-- content -->

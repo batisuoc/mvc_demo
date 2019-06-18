@@ -2,8 +2,8 @@ use mvc;
 
 create table user (
 	id int primary key AUTO_INCREMENT,
-	username char(15),
-	password char(20)
+	username char(50),
+	password char(50)
 );
 
 insert into user( username, password) values ('batisuoc', '12345');

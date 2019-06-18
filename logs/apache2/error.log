@@ -127,3 +127,35 @@ AH00558: apache2: Could not reliably determine the server's fully qualified doma
 [Fri Jun 14 16:14:23.180789 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
 [Fri Jun 14 16:14:23.180928 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
 [Fri Jun 14 19:00:50.001940 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.4. Set the 'ServerName' directive globally to suppress this message
+[Mon Jun 17 17:42:48.615025 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.4 configured -- resuming normal operations
+[Mon Jun 17 17:42:48.615379 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Mon Jun 17 17:48:37.897647 2019] [core:alert] [pid 16] [client 172.22.0.1:37958] /var/www/html/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Mon Jun 17 17:48:37.934498 2019] [core:alert] [pid 17] [client 172.22.0.1:37962] /var/www/html/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration, referer: http://localhost:8001/
+[Mon Jun 17 17:48:39.068979 2019] [core:alert] [pid 18] [client 172.22.0.1:37972] /var/www/html/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration, referer: http://localhost:8001/
+[Mon Jun 17 17:51:15.273990 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.3. Set the 'ServerName' directive globally to suppress this message
+[Mon Jun 17 17:51:42.684441 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.4 configured -- resuming normal operations
+[Mon Jun 17 17:51:42.684617 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Mon Jun 17 17:53:55.677420 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.4. Set the 'ServerName' directive globally to suppress this message
+[Mon Jun 17 17:57:18.479644 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Mon Jun 17 17:57:18.480195 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Mon Jun 17 17:58:02.728035 2019] [core:alert] [pid 16] [client 172.22.0.1:38194] /var/www/html/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Mon Jun 17 17:58:03.200041 2019] [core:alert] [pid 17] [client 172.22.0.1:38192] /var/www/html/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration, referer: http://localhost:8001/
+[Mon Jun 17 17:58:04.904593 2019] [core:alert] [pid 18] [client 172.22.0.1:38198] /var/www/html/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Mon Jun 17 17:58:05.139331 2019] [core:alert] [pid 19] [client 172.22.0.1:38202] /var/www/html/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration, referer: http://localhost:8001/
+[Mon Jun 17 17:58:05.463002 2019] [core:alert] [pid 20] [client 172.22.0.1:38206] /var/www/html/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Mon Jun 17 17:58:05.675929 2019] [core:alert] [pid 16] [client 172.22.0.1:38210] /var/www/html/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration, referer: http://localhost:8001/
+[Mon Jun 17 17:58:05.842528 2019] [core:alert] [pid 17] [client 172.22.0.1:38216] /var/www/html/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Mon Jun 17 17:58:06.066003 2019] [core:alert] [pid 18] [client 172.22.0.1:38218] /var/www/html/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration, referer: http://localhost:8001/
+[Mon Jun 17 17:58:06.181696 2019] [core:alert] [pid 19] [client 172.22.0.1:38222] /var/www/html/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Mon Jun 17 17:58:06.391288 2019] [core:alert] [pid 20] [client 172.22.0.1:38228] /var/www/html/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration, referer: http://localhost:8001/
+[Mon Jun 17 18:00:54.460013 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.4. Set the 'ServerName' directive globally to suppress this message
+[Mon Jun 17 18:01:34.243029 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Mon Jun 17 18:01:34.243215 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Mon Jun 17 18:57:10.901310 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.3. Set the 'ServerName' directive globally to suppress this message
+[Tue Jun 18 03:20:18.362094 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Tue Jun 18 03:20:18.362895 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'

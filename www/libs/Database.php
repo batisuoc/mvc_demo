@@ -9,7 +9,7 @@ class Database extends PDO
 	{
 		try 
 		{
-			parent::__construct('mysql:host=mvcdemo_db_1;port:3306;dbname=mvc', 'user', 'test');
+			parent::__construct(DB_TYPE.':host='.DB_HOST.';dbname='.DB_NAME, DB_USER, DB_PASS);
 		} 
 		catch(PDOException $e) 
 		{

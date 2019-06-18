@@ -2,17 +2,15 @@
 /**
  * 
  */
-class Error extends Controller
-{
-	function __construct()
-	{
+class Error extends Controller {
+
+	function __construct() {
 		parent::__construct();
 	}
 
-	function index()
-	{
-		$this->view->msg = "This page doesn't exists";
-		$this->view->render('error/index');//Hien ra trang error
+	function index() {
+		//Hien ra trang error
+		$this->view->render('error/index');
 	}
 }
 

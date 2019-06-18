@@ -1,2 +1,1 @@
-
-<?php echo $this->msg; ?>
+<h1>THIS IS ERROR PAGE</h1>

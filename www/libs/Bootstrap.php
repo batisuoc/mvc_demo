@@ -5,14 +5,13 @@
 class Bootstrap
 {
 	
-	function __construct()
-	{
+	function __construct() {
+
 		$url = isset($_GET['url']) ? $_GET['url'] : null;
 		//Xoa khoang trang thua o ben phai chuoi
 		$url = rtrim($url, '/');
 		//Tach tung action trong chuoi thanh tung phan tu trong mang
 		$url = explode('/', $url);
-		// print_r($url);
 
 		//Neu khong co action nao thi chuyen ve trang index
 		if (empty($url[0])) {
@@ -29,12 +28,12 @@ class Bootstrap
 		}
 		else {
 			//Hien thi trang error roi dung lai
-			require 'controllers/error.php';
-			$controller = new Error();
-			return false;
+			$this->error();
 		}
-		$controller = new $url[0];//Khoi tao controller
-		$controller->loadModel($url[0]);//Khoi tao model trong controller
+		//Khoi tao controller
+		$controller = new $url[0];
+		//Khoi tao model trong controller
+		$controller->loadModel($url[0]);
 		
 		//Neu co param o url[2] thi truyen param vao function url[1] neu co
 		if (isset($url[2])) {
@@ -42,7 +41,7 @@ class Bootstrap
 				$controller->{$url[1]}($url[2]);
 			}
 			else {
-				echo "THIS FUNCTION DOES NOT EXISTS IN THIS CONTROLLER";
+				$this->error();
 			}
 		}
 		else {
@@ -52,13 +51,20 @@ class Bootstrap
 					$controller->{$url[1]}();
 				}
 				else {
-					echo "THIS FUNCTION DOES NOT EXISTS IN THIS CONTROLLER";
+					$this->error();
 				}
 			}
 			else {
 				$controller->index();
 			}	
 		}
+	}
+
+	function error() {
+		require 'controllers/error.php';
+		$controller = new Error();
+		$controller->index();
+		return false;
 	}
 }
 
