@@ -159,3 +159,118 @@ AH00558: apache2: Could not reliably determine the server's fully qualified doma
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.3. Set the 'ServerName' directive globally to suppress this message
 [Tue Jun 18 03:20:18.362094 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
 [Tue Jun 18 03:20:18.362895 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Jun 18 18:33:02.793147 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.3. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 11:29:57.479520 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 11:29:57.480235 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 11:48:32.507553 2019] [core:alert] [pid 16] [client 172.22.0.1:58342] /var/www/html/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Thu Jun 20 11:48:33.009192 2019] [core:alert] [pid 17] [client 172.22.0.1:58346] /var/www/html/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration, referer: http://localhost:8001/
+[Thu Jun 20 11:49:36.719767 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 11:49:55.367877 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 11:49:55.381138 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 11:59:53.801577 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 12:06:07.867530 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 12:06:07.867842 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 12:35:05.824111 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 12:36:53.120113 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 12:36:53.120611 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 12:45:02.370972 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 12:45:14.716014 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 12:45:14.716229 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 12:51:29.919320 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.3. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 12:51:49.999633 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 12:51:50.000164 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 13:35:30.934410 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 13:35:50.340286 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 13:35:50.340559 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 13:55:24.527241 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.3. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 13:55:26.711936 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 13:55:26.714830 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 13:55:37.147618 2019] [php7:notice] [pid 19] [client 172.22.0.1:60520] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'.
+[Thu Jun 20 13:55:41.144213 2019] [php7:notice] [pid 17] [client 172.22.0.1:60518] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'.
+[Thu Jun 20 13:55:42.406935 2019] [php7:notice] [pid 17] [client 172.22.0.1:60518] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/
+[Thu Jun 20 13:56:04.186006 2019] [php7:notice] [pid 20] [client 172.22.0.1:60536] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/
+[Thu Jun 20 13:56:04.409599 2019] [php7:notice] [pid 20] [client 172.22.0.1:60536] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/
+[Thu Jun 20 13:56:04.931128 2019] [php7:notice] [pid 20] [client 172.22.0.1:60536] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/login
+[Thu Jun 20 13:56:07.691465 2019] [php7:notice] [pid 20] [client 172.22.0.1:60536] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/login
+[Thu Jun 20 13:56:08.223804 2019] [php7:notice] [pid 20] [client 172.22.0.1:60536] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/help
+[Thu Jun 20 13:56:08.795158 2019] [php7:notice] [pid 20] [client 172.22.0.1:60536] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/help
+[Thu Jun 20 13:56:09.016433 2019] [php7:notice] [pid 20] [client 172.22.0.1:60536] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/help
+[Thu Jun 20 13:56:09.475568 2019] [php7:notice] [pid 20] [client 172.22.0.1:60536] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/login
+[Thu Jun 20 13:56:10.574378 2019] [php7:notice] [pid 20] [client 172.22.0.1:60536] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/login
+[Thu Jun 20 13:56:11.033133 2019] [php7:notice] [pid 20] [client 172.22.0.1:60536] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/help
+[Thu Jun 20 13:56:11.774808 2019] [php7:notice] [pid 20] [client 172.22.0.1:60536] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/help
+[Thu Jun 20 13:56:12.410162 2019] [php7:notice] [pid 20] [client 172.22.0.1:60536] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/index
+[Thu Jun 20 13:56:13.072500 2019] [php7:notice] [pid 20] [client 172.22.0.1:60536] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/index
+[Thu Jun 20 13:56:13.288308 2019] [php7:notice] [pid 20] [client 172.22.0.1:60536] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/index
+[Thu Jun 20 13:56:13.785430 2019] [php7:notice] [pid 20] [client 172.22.0.1:60536] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/login
+[Thu Jun 20 14:10:29.928549 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.3. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 14:10:32.808151 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 14:10:32.808368 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 14:10:37.303994 2019] [php7:notice] [pid 17] [client 172.22.0.1:60834] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/index
+[Thu Jun 20 14:10:37.765524 2019] [php7:notice] [pid 17] [client 172.22.0.1:60834] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/login
+[Thu Jun 20 14:12:10.490359 2019] [php7:notice] [pid 18] [client 172.22.0.1:60866] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/login
+[Thu Jun 20 14:12:11.042116 2019] [php7:notice] [pid 18] [client 172.22.0.1:60866] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/help
+[Thu Jun 20 14:12:16.928147 2019] [php7:notice] [pid 19] [client 172.22.0.1:60864] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/help
+[Thu Jun 20 14:12:16.943031 2019] [php7:notice] [pid 19] [client 172.22.0.1:60864] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/help
+[Thu Jun 20 14:12:17.266513 2019] [php7:notice] [pid 19] [client 172.22.0.1:60864] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/login
+[Thu Jun 20 14:12:28.239690 2019] [php7:notice] [pid 21] [client 172.22.0.1:60896] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/login
+[Thu Jun 20 14:12:28.793798 2019] [php7:notice] [pid 21] [client 172.22.0.1:60896] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/help
+[Thu Jun 20 14:12:29.601773 2019] [php7:notice] [pid 21] [client 172.22.0.1:60896] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/help
+[Thu Jun 20 14:12:29.612727 2019] [php7:notice] [pid 21] [client 172.22.0.1:60896] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/help
+[Thu Jun 20 14:12:29.880803 2019] [php7:notice] [pid 21] [client 172.22.0.1:60896] Xdebug could not open the remote debug file '/usr/local/etc/php/xdebug.log'., referer: http://localhost:8001/login
+[Thu Jun 20 14:24:32.860046 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 14:27:34.030531 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 14:27:34.030733 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 14:32:01.920637 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.25.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 14:32:18.465881 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 14:32:18.466146 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 14:41:17.962405 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.26.0.3. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 14:41:47.341762 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 14:41:47.341953 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 14:42:34.435017 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.27.0.3. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 14:44:01.680649 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 14:44:01.681142 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 14:45:51.251972 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.28.0.3. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 14:52:12.283918 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 14:52:12.284913 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 14:52:37.425855 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.28.0.3. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 14:52:40.690219 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 14:52:40.691180 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 14:54:56.417723 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.29.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 14:59:29.566382 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 14:59:29.566591 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 15:02:05.828058 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.29.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 15:02:08.615441 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 15:02:08.617791 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 16:18:14.070731 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.29.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 16:39:15.675152 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 16:39:15.676429 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 16:45:26.283581 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.29.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 16:45:28.592542 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 16:45:28.593356 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 20 17:02:08.655978 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.29.0.3. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 17:02:10.482700 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Thu Jun 20 17:02:10.483442 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+1561050778.738784: There was a problem sending 179 bytes on socket 10: Broken pipe
+1561051133.143475: There was a problem sending 179 bytes on socket 10: Broken pipe
+1561051278.621888: There was a problem sending 179 bytes on socket 10: Broken pipe
