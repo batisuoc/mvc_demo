@@ -274,3 +274,11 @@ AH00558: apache2: Could not reliably determine the server's fully qualified doma
 1561050778.738784: There was a problem sending 179 bytes on socket 10: Broken pipe
 1561051133.143475: There was a problem sending 179 bytes on socket 10: Broken pipe
 1561051278.621888: There was a problem sending 179 bytes on socket 10: Broken pipe
+[Thu Jun 20 17:44:02.051009 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.29.0.4. Set the 'ServerName' directive globally to suppress this message
+[Fri Jun 21 03:44:59.496609 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Fri Jun 21 03:44:59.497506 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Jun 21 07:50:13.525345 2019] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.29.0.4. Set the 'ServerName' directive globally to suppress this message
+[Fri Jun 21 08:42:07.681588 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.3.6 configured -- resuming normal operations
+[Fri Jun 21 08:42:07.802081 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'

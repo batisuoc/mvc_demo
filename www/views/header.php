@@ -5,7 +5,15 @@
 	<link rel="stylesheet" type="text/css" href="<?= URL ?>public/css/default.css">
 	<script type="text/javascript" src="<?= URL ?>public/js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="<?= URL ?>public/js/custom.js"></script>
+	<?php
+	if (isset($this->js)) {
+		// echo 1;
+		foreach ($this->js as $js) {
+			echo '<script type="text/javascript" src="'.URL.'views/'.$js.'"></script>';
+		}
+	}
 
+	?>
 </head>
 <body>
 
