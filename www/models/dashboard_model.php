@@ -2,7 +2,8 @@
 
 class Dashboard_Model extends Model
 {
-    function __construct() {
+    function __construct() 
+    {
         parent::__construct();
     }
     
@@ -29,6 +30,6 @@ class Dashboard_Model extends Model
         $id = $_POST['id'];
         $stmt = $this->db->prepare('DELETE FROM data WHERE id = "'.$id.'"');
         $stmt->execute();
-        echo $id;
+        // echo $id;
     }
 }

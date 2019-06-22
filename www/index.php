@@ -9,6 +9,7 @@ require 'libs/View.php';
 require 'libs/Database.php';
 require 'libs/Session.php';
 
+//Config file
 require 'config/database.php';
 require 'config/paths.php';
 
