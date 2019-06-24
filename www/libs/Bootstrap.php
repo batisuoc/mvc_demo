@@ -29,6 +29,7 @@ class Bootstrap
 		else {
 			//Hien thi trang error roi dung lai
 			$this->error();
+			return false;
 		}
 		//Khoi tao controller
 		$controller = new $url[0];
@@ -42,6 +43,7 @@ class Bootstrap
 			}
 			else {
 				$this->error();
+				return false;
 			}
 		}
 		else {
@@ -52,6 +54,7 @@ class Bootstrap
 				}
 				else {
 					$this->error();
+					return false;
 				}
 			}
 			else {
@@ -61,8 +64,8 @@ class Bootstrap
 	}
 
 	function error() {
-		require 'controllers/error.php';
-		$controller = new Error();
+		require 'controllers/errors.php';
+		$controller = new Errors();
 		$controller->index();
 		return false;
 	}
