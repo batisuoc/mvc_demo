@@ -28,17 +28,24 @@ class User extends Controller
     
     function create()
     {
-        # code...
+        $data = array();
+        $data['username'] = $_POST['username'];
+        $data['password'] = md5($_POST['password']);
+        $data['role'] = $_POST['role'];
+        
+        $this->model->create($data);
+
+        header('location: '.URL.'user');
     }
 
     function edit($id)
     {
-        # code...
+        echo $id;
     }
 
     function delete($id)
     {
-        # code...
+        echo $id;
     }
 
 }
