@@ -16,7 +16,7 @@ class Dashboard extends Controller
 			header('location: ../login');
 			exit();
 		}
-
+		//Tao link toi javascript cua dashboard
 		$this->view->js = array('dashboard/js/default.js');
 	}
 

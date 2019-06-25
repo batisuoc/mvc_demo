@@ -30,6 +30,5 @@ class Dashboard_Model extends Model
         $id = $_POST['id'];
         $stmt = $this->db->prepare('DELETE FROM data WHERE id = "'.$id.'"');
         $stmt->execute();
-        // echo $id;
     }
 }
