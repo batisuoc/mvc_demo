@@ -12,7 +12,6 @@ class Index extends Controller
 
 	function index()
 	{
-		echo "THIS IS INDEX PAGE";
 		$this->view->render('index/index');
 	}
 

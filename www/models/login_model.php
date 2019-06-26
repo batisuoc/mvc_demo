@@ -9,10 +9,11 @@ class Login_Model extends Model {
 	}
 
 	public function run() {
-		$stmt = $this->db->prepare("SELECT username, role FROM user WHERE username = :username AND password = MD5(:password)");
+		// $pass = Hash::create('md5', $_POST['password'], HASH_PASSWORD_KEY);
+		$stmt = $this->db->prepare("SELECT username, role FROM user WHERE username = :username AND password = :password");
 		$stmt->execute(array(
 			'username' => $_POST['username'],
-			'password' => $_POST['password'] 
+			'password' => Hash::create('md5', $_POST['password'], HASH_PASSWORD_KEY) 
 		));
 		$data = $stmt->fetch();
 

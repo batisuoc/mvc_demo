@@ -1,17 +1,14 @@
 <?php
-//autoloader
-require 'libs/Bootstrap.php';
-require 'libs/Controller.php';
-require 'libs/Model.php';
-require 'libs/View.php';
-
-//Library
-require 'libs/Database.php';
-require 'libs/Session.php';
 
 //Config file
 require 'config/database.php';
 require 'config/paths.php';
+require 'config/constants.php';
+
+//Auto load all library class in libs folder
+function __autoload($class) {
+    require LIBS.$class.".php";
+}
 
 $app = new Bootstrap();
 

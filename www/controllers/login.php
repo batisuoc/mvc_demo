@@ -12,6 +12,7 @@ class Login extends Controller
 
 	function index()
 	{
+		// echo Hash::create('md5', 'uoc', HASH_KEY);
 		$this->view->render('login/index');
 	}
 
