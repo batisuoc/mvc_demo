@@ -7,9 +7,9 @@
         <input type="password" name="password"/><br/>
         <label>Role</label>
         <select name="role">
-            <option value="default" <?= $isSelected = ($this->user['role'] == 'default') ? 'selected' : '' ?>>Default</option>
-            <option value="admin" <?= $isSelected = ($this->user['role'] == 'admin') ? 'selected' : '' ?>>Admin</option>
-            <option value="owner" <?= $isSelected = ($this->user['role'] == 'owner') ? 'selected' : '' ?>>Owner</option>
+            <option value="default" <?= ($this->user['role'] == 'default') ? 'selected' : '' ?>>Default</option>
+            <option value="admin" <?= ($this->user['role'] == 'admin') ? 'selected' : '' ?>>Admin</option>
+            <option value="owner" <?= ($this->user['role'] == 'owner') ? 'selected' : '' ?>>Owner</option>
         </select>
         <br/>
         <label>&nbsp</label>
