@@ -40,12 +40,26 @@ class User extends Controller
 
     function edit($id)
     {
-        echo $id;
+        $this->view->user = $this->model->userSingleList($id);
+        $this->view->render('user/edit');
+    }
+
+    function editSave($id)
+    {
+        $data = array();
+        $data['id'] = $id;
+        $data['username'] = $_POST['username'];
+        $data['password'] = $_POST['password'];
+        $data['role'] = $_POST['role'];
+
+        $this->model->editSave($data);
+        header('location: '.URL.'user');
     }
 
     function delete($id)
     {
-        echo $id;
+        $this->model->delete($id);
+        header('location: '.URL.'user');
     }
 
 }

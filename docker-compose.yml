@@ -6,7 +6,6 @@ services:
             - "8001:80"
         volumes:
             - ./www:/var/www/html/
-            - ./logs/apache2:/var/log/apache2
         links:
             - db
         networks:
