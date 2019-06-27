@@ -24,7 +24,7 @@ class Database extends PDO {
 		$fieldValues = ':' . implode(', :', array_keys($data));
 
 		$stmt = $this->prepare("INSERT INTO user($fieldNames) VALUES ($fieldValues)");
-		
+		//Gan gia tri cua tung value vao key trong query
 		foreach ($data as $key => $value) {
 			$stmt->bindValue($key, $value);
 		}
@@ -52,6 +52,12 @@ class Database extends PDO {
 			$stmt->bindValue($key, $value);
 		}
 		
+		$stmt->execute();
+	}
+
+	public function delete($table, $where)
+	{
+		$stmt = $this->prepare("DELETE FROM $table WHERE $where");
 		$stmt->execute();
 	}
 }

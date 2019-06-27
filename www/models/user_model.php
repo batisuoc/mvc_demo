@@ -42,10 +42,7 @@ class User_Model extends Model {
 	}
 
 	public function delete($id) {
-		$stmt = $this->db->prepare("DELETE FROM user WHERE id = :id");
-		$stmt->execute(array(
-			'id' => $id
-		));
+		$this->db->delete('user', "id = $id");
 	}
 }
 
