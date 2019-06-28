@@ -9,24 +9,18 @@ class User_Model extends Model {
 	}
 
 	public function userList() {
-        $stmt = $this->db->prepare("SELECT id, username, role FROM user");
-        $stmt->execute();
-        return $stmt->fetchAll();
+		return $this->db->select("SELECT id, username, role FROM user");
 	}
 
 	public function userSingleList($id)
 	{
-		$stmt = $this->db->prepare("SELECT id, username, role FROM user WHERE id = :id");
-        $stmt->execute(array(
-			'id' => $id
-		));
-        return $stmt->fetch();
+		return $this->db->select("SELECT id, username, role FROM user WHERE id = :id", array('id' => $id));
 	}
 
 	public function create($data) {
 		$this->db->insert('user', array(
 			'username' => $data['username'],
-			'password' => Hash::create('md5', $data['password'], HASH_PASSWORD_KEY),
+			'password' => Hash::create('sha256', $data['password'], HASH_PASSWORD_KEY),
 			'role' => $data['role']
 		));
 	}
@@ -34,7 +28,7 @@ class User_Model extends Model {
 	public function editSave($data) {
 		$postEditData = array(
 			'username' => $data['username'],
-			'password' => Hash::create('md5', $data['password'], HASH_PASSWORD_KEY),
+			'password' => Hash::create('sha256', $data['password'], HASH_PASSWORD_KEY),
 			'role' => $data['role']
 		);
 
@@ -42,6 +36,12 @@ class User_Model extends Model {
 	}
 
 	public function delete($id) {
+		//Kiem tra quyen cua user dang dang nhap co phai la owner khong, neu la owner thi se khong duoc phep xoa accout cua chinh minh
+		$data = $this->db->select("SELECT role FROM user WHERE id = :id", array('id' => $id));
+		if ($data['role'] == 'owner') {
+			return false;
+		}
+
 		$this->db->delete('user', "id = $id");
 	}
 }

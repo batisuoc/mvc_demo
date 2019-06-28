@@ -10,25 +10,20 @@ class Dashboard_Model extends Model
     function xhrInsert()
     {
         $text = $_POST['text'];
-        $stmt = $this->db->prepare("INSERT INTO data(text) VALUES (:text)");
-        $stmt->execute(array( 'text' => $text ));
+        $this->db->insert('data', array( 'text' => $text ));
         $data = array('text' => $text, 'id' => $this->db->lastInsertId());
         echo json_encode($data);
     }
 
     function xhrGetListings()
     {
-        $stmt = $this->db->prepare("SELECT * FROM data");
-        $stmt->setFetchMode(PDO::FETCH_ASSOC);
-        $stmt->execute();
-        $data = $stmt->fetchAll();
+        $data = $this->db->select("SELECT * FROM data");
         echo json_encode($data);
     }
 
     function xhrDeleteListing()
     {
-        $id = $_POST['id'];
-        $stmt = $this->db->prepare('DELETE FROM data WHERE id = "'.$id.'"');
-        $stmt->execute();
+        $id = (int) $_POST['id'];
+        $this->db->delete('data', "id = $id");
     }
 }

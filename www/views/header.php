@@ -4,7 +4,10 @@
 <head>
 	<title>Header View</title>
 	<link rel="stylesheet" type="text/css" href="<?= URL ?>public/css/default.css">
-	<script type="text/javascript" src="<?= URL ?>public/js/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="<?= URL ?>public/js/custom.js"></script>
 	<?php
 	if (isset($this->js)) {
@@ -18,7 +21,6 @@
 </head>
 
 <body>
-
 	<div id="header">
 		<?php if (Session::get('loggedIn') == false) { ?>
 			<a href="<?= URL ?>index">Index</a>

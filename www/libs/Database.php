@@ -14,6 +14,31 @@ class Database extends PDO {
 	}
 
 	/**
+	 * Select
+	 * @param string $sql An SQL query string
+	 * @param array $array Param to bind
+	 * @param constant $fetcMode A PDO fetch mode
+	 * @return mixed
+	 */
+	public function select($sql, $array = array(), $fetchMode = PDO::FETCH_ASSOC)
+	{
+		$stmt = $this->prepare($sql);
+		foreach ($array as $key => $value) {
+			$stmt->bindValue($key, $value);
+		}
+
+		$stmt->execute();
+		$count = $stmt->rowCount();
+		if ($count == 1) {
+			return $stmt->fetch($fetchMode);
+		} elseif($count > 1) {
+			return $stmt->fetchAll($fetchMode);
+		} else {
+			return false;
+		}	
+	}
+
+	/**
 	 * @param string $table A name of table to insert
 	 * @param array $data An array of data we want to insert
 	 */
@@ -23,7 +48,7 @@ class Database extends PDO {
 		$fieldNames = implode(',', array_keys($data));
 		$fieldValues = ':' . implode(', :', array_keys($data));
 
-		$stmt = $this->prepare("INSERT INTO user($fieldNames) VALUES ($fieldValues)");
+		$stmt = $this->prepare("INSERT INTO $table($fieldNames) VALUES ($fieldValues)");
 		//Gan gia tri cua tung value vao key trong query
 		foreach ($data as $key => $value) {
 			$stmt->bindValue($key, $value);
@@ -55,10 +80,15 @@ class Database extends PDO {
 		$stmt->execute();
 	}
 
-	public function delete($table, $where)
+	/**
+	 * Delete 
+	 * @param string $table A name of table
+	 * @param string $where The WHERE conditions
+	 * @param integer $limit An limit row 
+	 */
+	public function delete($table, $where, $limit = 1)
 	{
-		$stmt = $this->prepare("DELETE FROM $table WHERE $where");
-		$stmt->execute();
+		return $this->exec("DELETE FROM $table WHERE $where LIMIT $limit");
 	}
 }
 

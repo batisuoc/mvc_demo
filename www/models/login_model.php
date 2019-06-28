@@ -9,19 +9,22 @@ class Login_Model extends Model {
 	}
 
 	public function run() {
-		// $pass = Hash::create('md5', $_POST['password'], HASH_PASSWORD_KEY);
-		$stmt = $this->db->prepare("SELECT username, role FROM user WHERE username = :username AND password = :password");
-		$stmt->execute(array(
-			'username' => $_POST['username'],
-			'password' => Hash::create('md5', $_POST['password'], HASH_PASSWORD_KEY) 
-		));
-		$data = $stmt->fetch();
+		// $stmt = $this->db->prepare("SELECT username, role FROM user WHERE username = :username AND password = :password");
+		// $stmt->execute(array(
+		// 	'username' => $_POST['username'],
+		// 	'password' => Hash::create('sha256', $_POST['password'], HASH_PASSWORD_KEY) 
+		// ));
+		$result = $this->db->select("SELECT username, role FROM user WHERE username = :username AND password = :password",
+								    array(
+										'username' => $_POST['username'],
+										'password' => Hash::create('sha256', $_POST['password'], HASH_PASSWORD_KEY) 
+								    ));
 
-		$count =  $stmt->rowCount();
-		if ($count > 0) {
+		// $count = $stmt->rowCount();
+		if ($result != false) {
 			Session::init();
 			//Neu da dang nhap thi gan mot bien session co gia tri bang true
-			Session::set('role', $data['role']);
+			Session::set('role', $result['role']);
 			Session::set('loggedIn', true);
 			header('location: ../dashboard');
 		} else {

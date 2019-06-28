@@ -10,6 +10,8 @@ class Bootstrap
 		$url = isset($_GET['url']) ? $_GET['url'] : null;
 		//Xoa khoang trang thua o ben phai chuoi
 		$url = rtrim($url, '/');
+		//Kiem tra url co hop le hay khong, neu khong se tra ve false
+		$url = filter_var($url, FILTER_SANITIZE_URL);
 		//Tach tung action trong chuoi thanh tung phan tu trong mang
 		$url = explode('/', $url);
 
