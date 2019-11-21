@@ -91,5 +91,3 @@ class Database extends PDO {
 		return $this->exec("DELETE FROM $table WHERE $where LIMIT $limit");
 	}
 }
-
-?>
