@@ -2,6 +2,7 @@
 
 //Config file
 require 'config.php';
+require 'util/Auth.php';
 
 //Auto load all library class in libs folder
 function __autoload($class) {
@@ -9,5 +10,3 @@ function __autoload($class) {
 }
 
 $app = new Bootstrap();
-
-?>

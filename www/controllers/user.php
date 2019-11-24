@@ -37,7 +37,7 @@ class User extends Controller
 
         header('location: '.URL.'user');
     }
-
+    // Render Edit page
     function edit($id)
     {
         $this->view->user = $this->model->userSingleList($id);
@@ -63,5 +63,3 @@ class User extends Controller
     }
 
 }
-
-?>

@@ -7,15 +7,7 @@ class Dashboard extends Controller
 	function __construct()
 	{
 		parent::__construct();
-		//Khoi tao phien session
-		Session::init();
-		//Kiem tra dang nhap
-		$logged = Session::get('loggedIn');
-		if ($logged == false) {
-			Session::destroy();
-			header('location: ../login');
-			exit();
-		}
+		Auth::handleLogin();
 		//Tao link toi javascript cua dashboard
 		$this->view->js = array('dashboard/js/default.js');
 	}
@@ -49,5 +41,3 @@ class Dashboard extends Controller
 	}
 
 }
-
-?>

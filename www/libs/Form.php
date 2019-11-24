@@ -1,20 +1,32 @@
 <?php
 class Form
 {
-    private $postData = array();
+    private $_currItem = null;
+
+    private $_postData = array();
 
     public function __construct()
-    {
+    { }
 
-    }
-
+    /**
+     * Get POST data value and import to an array
+     * @param string $field Input field name
+     */
     public function post($field)
     {
-        $this->postData[$field] = $_POST[$field];
+        $this->_postData[$field] = $_POST[$field];
+        $this->_currItem = $field;
+        return $this;
     }
 
-    public function val()
+    public function fetch($fieldName = false)
     {
-        # code...
+        if ($fieldName) {
+            if (isset($this->_postData[$fieldName])) {
+                return $this->_postData[$fieldName];
+            } else return false;
+        } else {
+            return $this->_postData;
+        }
     }
 }
